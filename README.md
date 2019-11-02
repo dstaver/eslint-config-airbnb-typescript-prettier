@@ -6,19 +6,42 @@
 
 Airbnb's ESLint config with TypeScript and Prettier support.
 
-# How to use
+Forked from [https://github.com/toshi-toma/eslint-config-airbnb-typescript-prettier](https://github.com/toshi-toma/eslint-config-airbnb-typescript-prettier) so I can adjust the default rules to my liking and use in my own projects.
+
+## How to use
+
 Install `eslint` and `prettier`, `eslint-config-airbnb-typescript-prettier` and put it into your `.eslintrc.js`.
 
 ```bash
-$ npm install eslint@^6.3.0 prettier@^1.18.2 eslint-config-airbnb-typescript-prettier --save-dev
+$ yarn add -D \
+eslint@^6.3.0 \
+prettier@^1.18.2 \
+eslint-config-airbnb-typescript-prettier
 ```
 
 `.eslintrc.js`
 
 ```js
 module.exports = {
-  extends: "airbnb-typescript-prettier"
-};
+  extends: 'airbnb-typescript-prettier',
+}
+```
+
+`.prettierrc`
+
+```json
+{
+  "arrowParens": "avoid",
+  "bracketSpacing": true,
+  "jsxBracketSameLine": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "semi": false,
+  "singleQuote": true,
+  "tabWidth": 2,
+  "trailingComma": "all",
+  "useTabs": false
+}
 ```
 
 ## License
